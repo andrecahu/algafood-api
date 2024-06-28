@@ -6,19 +6,19 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-public class Group {
+public class Team {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_group")
+    @Column(name = "id_team")
     private Long id;
 
-    @Column(name = "nm_group", nullable = false)
+    @Column(name = "nm_team", nullable = false)
     private String name;
 
     @ManyToMany
-    @JoinTable(name = "group_permission",
-        joinColumns = @JoinColumn(name = "id_group"),
+    @JoinTable(name = "team_permission",
+        joinColumns = @JoinColumn(name = "id_team"),
         inverseJoinColumns = @JoinColumn(name = "id_permission"))
     private List<Permission> permissions = new ArrayList<>();
 
@@ -50,8 +50,8 @@ public class Group {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Group group = (Group) o;
-        return Objects.equals(id, group.id);
+        Team team = (Team) o;
+        return Objects.equals(id, team.id);
     }
 
     @Override
