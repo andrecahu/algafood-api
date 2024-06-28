@@ -10,9 +10,6 @@
         <module name="algafood-api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="algafood-api" target="12" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

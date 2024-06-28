@@ -37,5 +37,3 @@ insert into product (nm_product, ds_product, vl_product, is_active, id_restauran
 insert into product (nm_product, ds_product, vl_product, is_active, id_restaurant) values ('Murg Curry', 'Cubos de frango preparados com molho curry e especiarias', 43, 1, 3);
 insert into product (nm_product, ds_product, vl_product, is_active, id_restaurant) values ('Bife Ancho', 'Corte macio e suculento, com dois dedos de espessura, retirado da parte dianteira do contrafilé', 79, 1, 4);
 insert into product (nm_product, ds_product, vl_product, is_active, id_restaurant) values ('T-Bone', 'Corte muito saboroso, com um osso em formato de T, sendo de um lado o contrafilé e do outro o filé mignon', 89, 1, 4);
-insert into product (nm_product, ds_product, vl_product, is_active, id_restaurant) values ('Sanduíche X-Tudo', 'Sandubão com muito queijo, hamburger bovino, bacon, ovo, salada e maionese', 19, 1, 5);
-insert into product (nm_product, ds_product, vl_product, is_active, id_restaurant) values ('Espetinho de Cupim', 'Acompanha farinha, mandioca e vinagrete', 8, 1, 6);

@@ -26,9 +26,9 @@ public class User {
     private LocalDateTime registrationDate;
 
     @ManyToMany
-    @JoinTable(name = "user_group",
+    @JoinTable(name = "user_team",
         joinColumns = @JoinColumn(name = "id_user"),
-        inverseJoinColumns = @JoinColumn(name = "id_group"))
-    private List<Group> groups = new ArrayList<>();
+        inverseJoinColumns = @JoinColumn(name = "id_team"))
+    private List<Team> teams = new ArrayList<>();
 
 }
